@@ -1,4 +1,4 @@
-# afs-demo-package
+# afs-demo-pkg
 
 
 **Important!** This package contains resource instances belonging to the Group model. By default the Group model is not published. Before attempting to load this pacakge, be sure to verify that the Group resource model is published.
