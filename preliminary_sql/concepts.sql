@@ -4,7 +4,8 @@ insert into concepts values (
     'bc52d52c-958e-4e6b-a247-e458f076b1bb', 
     'bc52d52c-958e-4e6b-a247-e458f076b1bb', 
     'Concept'
-    );
+    )
+on conflict do nothing;
 
 insert into values values (
     '5d60a4d1-0a2e-4a2b-b071-ffd241edc251',
@@ -12,7 +13,8 @@ insert into values values (
     'bc52d52c-958e-4e6b-a247-e458f076b1bb',
     'en',
     'prefLabel'
-    );
+    )
+on conflict do nothing;
 
 insert into relations values (
     '85ee8b1d-0e5c-48ce-af18-a711a018ebdd',
@@ -35,7 +37,8 @@ insert into concepts values (
     '5849a150-bf7b-4b68-937d-d22a52780eb9', 
     '5849a150-bf7b-4b68-937d-d22a52780eb9', 
     'Concept'
-    );
+    )
+on conflict do nothing;
 
 insert into values values (
     '2e54d220-432a-4ac0-9259-0d816c59aab2',
@@ -43,7 +46,8 @@ insert into values values (
     '5849a150-bf7b-4b68-937d-d22a52780eb9',
     'en',
     'prefLabel'
-    );
+    )
+on conflict do nothing;
 
 insert into relations values (
     '4877656e-f72b-4247-a10c-3bd37a409ff8',
@@ -56,5 +60,4 @@ insert into relations values (
     'e77b3858-a4f6-4fd8-ac3b-05fcf4e783be',
     'a9e75b55-78b9-46a6-8cb2-aee3f5b5003e',
     '5849a150-bf7b-4b68-937d-d22a52780eb9',
-    'member'
-    );
+    'member');
