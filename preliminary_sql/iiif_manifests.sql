@@ -159,3 +159,5 @@ VALUES (
         '281c959d-3170-4ff4-882b-ee63872022ba'
     )
 ON CONFLICT DO NOTHING;
+
+SELECT setval('iiif_manifests_id_seq', (SELECT MAX(id) FROM iiif_manifests));
